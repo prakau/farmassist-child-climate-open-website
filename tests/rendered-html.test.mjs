@@ -20,6 +20,11 @@ test("renders the finished public-interest project site", async () => {
   assert.match(html, /FarmAssist Climate Intelligence/);
   assert.match(html, /Climate intelligence where connectivity ends/);
   assert.match(html, /Safeguarding by architecture/);
+  assert.match(html, /Directly aligned to published climate-tech needs/);
+  assert.match(html, /Five steps a technical reviewer can verify/);
+  assert.match(html, /Built, demonstrated, documented/);
+  assert.match(html, /Field-research workflows across three farmer locations/);
+  assert.match(html, /Critical submission gate/);
   assert.match(html, /USD 100,000/);
   assert.match(html, /No UNICEF endorsement/);
   assert.match(html, /Requires independent validation/);

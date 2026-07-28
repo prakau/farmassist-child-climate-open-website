@@ -26,6 +26,23 @@ const roadmap = [
   ["06", "Month 12", "Release pathway", "Evaluation report, implementation toolkit, proposed stable release, scale plan."],
 ];
 
+const reviewerPath = [
+  ["01", "Enter", "Submit a synthetic environmental observation without personal data."],
+  ["02", "Assess", "Run the configurable risk engine locally without continuous internet."],
+  ["03", "Explain", "Inspect thresholds, reasons, confidence boundaries, and next checks."],
+  ["04", "Queue", "Review an approved observation held safely on the device."],
+  ["05", "Sync", "Reconnect and publish only non-identifying aggregate indicators."],
+];
+
+const readiness = [
+  ["Working prototype", "API, risk engine, PWA, queue, synthetic generator", "Built & tested"],
+  ["Open-source commitment", "MIT software; CC BY 4.0 docs and synthetic data", "Release-ready"],
+  ["Low-resource deployment", "Local processing, SQLite, installable PWA, Docker", "Demonstrated"],
+  ["Child-centred safety", "No child profiles; aggregate-only publication boundary", "Documented"],
+  ["Field validation", "Supervised protocol, approvals, sensor and agronomic review", "Not yet completed"],
+  ["Outcome evidence", "Pre-defined technical and future usability indicators", "Future evaluation"],
+];
+
 export default function Home() {
   return (
     <>
@@ -36,6 +53,7 @@ export default function Home() {
           <span>FarmAssist</span>
         </a>
         <nav aria-label="Primary navigation">
+          <a href="#readiness">Readiness</a>
           <a href="#prototype">Prototype</a>
           <a href="#safeguarding">Safeguarding</a>
           <a href="#roadmap">Roadmap</a>
@@ -94,6 +112,70 @@ export default function Home() {
           <div><strong>98.93%</strong><span>measured Python test coverage</span></div>
         </section>
 
+        <section className="section evaluator-section" id="readiness">
+          <div className="section-kicker">00 — Reviewer brief</div>
+          <div className="evaluator-grid">
+            <div className="evaluator-lead">
+              <p className="overline">CLIMATE VENTURES ALIGNMENT · NO ENDORSEMENT CLAIMED</p>
+              <h2>Directly aligned to published climate-tech needs. Deliberately honest about the evidence still required.</h2>
+              <p>
+                UNICEF’s published 2026 Climate Ventures themes include hyper-local heat and
+                humidity alerts for schools, low-cost IoT monitoring, open-source frontier
+                technology, and deployment in low-resource settings. FarmAssist maps to those
+                technical needs through an offline environmental intelligence layer—without
+                claiming validated health or nutrition outcomes.
+              </p>
+              <a
+                className="source-link"
+                href="https://www.unicef.org/innovation/call-for-application-climate-and-health-2026"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Read the published Climate Ventures call <span>↗</span>
+              </a>
+            </div>
+            <div className="fit-grid">
+              <article>
+                <span>Priority area 2</span>
+                <strong>Early warning, early action</strong>
+                <p>Hyper-local temperature, humidity, and soil-moisture checks designed for trained adults supporting schools and communities.</p>
+              </article>
+              <article>
+                <span>Priority area 3</span>
+                <strong>Low-cost monitoring</strong>
+                <p>An edge-ready reference architecture for environmental sensors, local decisions, and delayed synchronization.</p>
+              </article>
+              <article>
+                <span>Core requirement</span>
+                <strong>Working open prototype</strong>
+                <p>Functional software, reproducible tests, open licenses, human-readable configuration, and synthetic demonstration data.</p>
+              </article>
+              <article>
+                <span>Deployment reality</span>
+                <strong>Low bandwidth by default</strong>
+                <p>Essential assessment stays local; connectivity improves coordination but does not gate the core workflow.</p>
+              </article>
+            </div>
+          </div>
+          <div className="climate-facts" aria-label="UNICEF-published climate context">
+            <div>
+              <strong>1 billion</strong>
+              <p>children live in countries facing high climate and environmental risk.</p>
+            </div>
+            <div>
+              <strong>466 million</strong>
+              <p>children live in areas with at least twice as many extreme-heat days as in the 1960s.</p>
+            </div>
+            <a
+              href="https://www.unicef.org/innovation/call-for-application-climate-and-health-2026"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Source: UNICEF Office of Innovation, Climate Ventures 2026 ↗
+            </a>
+          </div>
+        </section>
+
         <section className="section intro-section">
           <div className="section-kicker">01 — The challenge</div>
           <div className="intro-grid">
@@ -148,6 +230,39 @@ export default function Home() {
           <div className="stack-line">
             <span>Python 3.12</span><span>FastAPI</span><span>SQLite</span><span>TypeScript PWA</span>
             <span>OpenAPI</span><span>Docker</span><span>MIT + CC BY 4.0</span>
+          </div>
+        </section>
+
+        <section className="section demo-section">
+          <div className="section-kicker">02B — Verifiable demo path</div>
+          <div className="section-heading">
+            <h2>Five steps a technical reviewer can verify in minutes.</h2>
+            <p>
+              UNICEF’s published selection process verifies that a prototype exists, matches
+              the proposal, and reflects the software and hardware work described.
+            </p>
+          </div>
+          <div className="reviewer-path">
+            {reviewerPath.map(([number, title, detail]) => (
+              <article key={number}>
+                <span>{number}</span>
+                <h3>{title}</h3>
+                <p>{detail}</p>
+              </article>
+            ))}
+          </div>
+          <div className="demo-proof">
+            <div><span>Input contract</span><strong>Strict JSON Schema</strong></div>
+            <div><span>Duplicate safety</span><strong>UUID + HTTP 409</strong></div>
+            <div><span>Model logic</span><strong>Public JSON thresholds</strong></div>
+            <div><span>Public output</span><strong>Aggregate only</strong></div>
+            <a
+              href="https://www.unicef.org/innovation/stories/unicef-venture-fund-selection-process"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Official selection process ↗
+            </a>
           </div>
         </section>
 
@@ -235,6 +350,24 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="section readiness-section">
+          <div className="section-kicker">05B — Evidence ledger</div>
+          <div className="section-heading">
+            <h2>Built, demonstrated, documented—or clearly marked as future work.</h2>
+            <p>This ledger prevents prototype evidence from being confused with field validation or child-impact evidence.</p>
+          </div>
+          <div className="readiness-table">
+            <div className="readiness-head"><span>Review question</span><span>Evidence available</span><span>Status</span></div>
+            {readiness.map(([question, evidence, state]) => (
+              <div className="readiness-row" key={question}>
+                <strong>{question}</strong>
+                <p>{evidence}</p>
+                <span className={state.includes("Future") || state.includes("Not yet") ? "status-future" : "status-ready"}>{state}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+
         <section className="section roadmap-section" id="roadmap">
           <div className="section-kicker">06 — Twelve-month pathway</div>
           <div className="section-heading">
@@ -251,6 +384,31 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="section execution-section">
+          <div className="section-kicker light">06B — Execution foundation</div>
+          <div className="execution-grid">
+            <div>
+              <p className="overline">JOITA BIOSEED AI PRIVATE LIMITED · INDIA</p>
+              <h2>Built by a team already working across software, AI, IoT, agronomy, and field research.</h2>
+              <p>
+                The proposed child-climate module is new and unvalidated, but it is not starting
+                without technical and domain foundations.
+              </p>
+            </div>
+            <div className="execution-list">
+              <article><span>01</span><p>Offline-first FarmAssist test build and agronomic advisory workflows.</p></article>
+              <article><span>02</span><p>Programmer-led software development with AI and IoT experience.</p></article>
+              <article><span>03</span><p>Field-research workflows across three farmer locations covering approximately 25 acres in Haryana.</p></article>
+              <article><span>04</span><p>Laboratory and field-validation capacity for proposed supervised evaluation.</p></article>
+              <article><span>05</span><p>AgriTrust edge-hardware concepts and related industrial-design applications.</p></article>
+            </div>
+          </div>
+          <p className="execution-boundary">
+            These capabilities support delivery readiness; they do not constitute validation of
+            the UNICEF-specific module, model performance, child outcomes, or school deployment.
+          </p>
+        </section>
+
         <section className="funding-section">
           <div>
             <p className="eyebrow"><span /> Proposed funding request</p>
@@ -263,6 +421,14 @@ export default function Home() {
               and localization, safeguarding and pilot preparation, data-quality evaluation,
               independent-review readiness, documentation, and an implementation toolkit.
             </p>
+            <div className="funding-outputs">
+              <span>Validated architecture</span>
+              <span>Offline product</span>
+              <span>Reference IoT adapters</span>
+              <span>Safeguarding package</span>
+              <span>Supervised-pilot toolkit</span>
+              <span>Evaluation report</span>
+            </div>
             <p className="truth-note">No UNICEF endorsement, selection, partnership, or funding is claimed.</p>
           </div>
         </section>
@@ -290,6 +456,11 @@ export default function Home() {
               </ul>
               <p>Repository publishing is the next owner-controlled release step.</p>
             </div>
+          </div>
+          <div className="release-gate">
+            <span>Critical submission gate</span>
+            <strong>Publish the prepared repository on a public GitHub URL before final review.</strong>
+            <p>The software and documentation are committed locally; a public repository link is still required for reviewers to inspect the open-source evidence.</p>
           </div>
         </section>
 

@@ -14,20 +14,20 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     metadataBase,
-    title: "FarmAssist Climate Intelligence | Open, Offline, Explainable",
+    title: "FarmAssist Climate Intelligence | Child-Centred Climate Tech",
     description:
       "Open-source, offline-first climate-risk intelligence for school gardens, community nutrition gardens, and vulnerable smallholder settings.",
     applicationName: "FarmAssist Climate Intelligence",
     openGraph: {
-      title: "FarmAssist Climate Intelligence",
-      description: "Climate intelligence where connectivity ends. Open, offline, and explainable.",
+      title: "FarmAssist Climate Intelligence | Open, Offline, Explainable",
+      description: "Child-centred climate technology designed for the places connectivity cannot be assumed.",
       type: "website",
       images: [{ url: "/og.png", width: 1200, height: 630, alt: "FarmAssist Climate Intelligence social card" }],
     },
     twitter: {
       card: "summary_large_image",
-      title: "FarmAssist Climate Intelligence",
-      description: "Climate intelligence where connectivity ends. Open, offline, and explainable.",
+      title: "FarmAssist Climate Intelligence | Open, Offline, Explainable",
+      description: "Child-centred climate technology designed for the places connectivity cannot be assumed.",
       images: ["/og.png"],
     },
   };
