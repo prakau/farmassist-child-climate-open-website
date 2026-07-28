@@ -4,6 +4,10 @@ Public-facing project website for **FarmAssist Child Climate & Nutrition Intelli
 
 The site presents the working prototype, offline architecture, explainable reference risk engine, synthetic demonstration evidence, data-safety model, measurable indicators, proposed 12-month roadmap, funding request, open-source scope, and validation limitations.
 
+- Live site: https://farmassist-climate-open.algalomics.chatgpt.site
+- Public prototype: https://github.com/prakau/farmassist-child-climate-open
+- Website source: https://github.com/prakau/farmassist-child-climate-open-website
+
 ## Local development
 
 Requires Node.js 22.13 or newer.

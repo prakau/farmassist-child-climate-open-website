@@ -454,13 +454,24 @@ export default function Home() {
                 <li><span>✓</span> Continuous integration and secret scanning</li>
                 <li><span>✓</span> Transparent limitations and change control</li>
               </ul>
-              <p>Repository publishing is the next owner-controlled release step.</p>
+              <a
+                className="button button-primary"
+                href="https://github.com/prakau/farmassist-child-climate-open"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Inspect the public repository <span>↗</span>
+              </a>
             </div>
           </div>
           <div className="release-gate">
-            <span>Critical submission gate</span>
-            <strong>Publish the prepared repository on a public GitHub URL before final review.</strong>
-            <p>The software and documentation are committed locally; a public repository link is still required for reviewers to inspect the open-source evidence.</p>
+            <span>Open-source evidence live</span>
+            <strong>The complete v0.1.0-alpha prototype is public and independently inspectable.</strong>
+            <p>
+              Review the implementation, synthetic demonstration data, automated tests,
+              governance documents, safeguarding controls, model limitations, and release history
+              on <a href="https://github.com/prakau/farmassist-child-climate-open" target="_blank" rel="noreferrer">GitHub</a>.
+            </p>
           </div>
         </section>
 
@@ -469,6 +480,7 @@ export default function Home() {
           <h2>Climate resilience should work at the edge—and stay accountable in the open.</h2>
           <div className="hero-actions">
             <a className="button button-light" href="mailto:joitabioseedai@gmail.com">Discuss a responsible pilot <span>↗</span></a>
+            <a className="button button-outline-light" href="https://github.com/prakau/farmassist-child-climate-open" target="_blank" rel="noreferrer">Review the source</a>
             <a className="button button-outline-light" href="https://www.joitabioseedai.com/">Visit JOITA BIOSEED AI</a>
           </div>
           <p className="closing-meta">Project lead: Dr. Meenakshi Sharma · joitabioseedai@gmail.com</p>

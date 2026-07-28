@@ -24,7 +24,8 @@ test("renders the finished public-interest project site", async () => {
   assert.match(html, /Five steps a technical reviewer can verify/);
   assert.match(html, /Built, demonstrated, documented/);
   assert.match(html, /Field-research workflows across three farmer locations/);
-  assert.match(html, /Critical submission gate/);
+  assert.match(html, /Open-source evidence live/);
+  assert.match(html, /github\.com\/prakau\/farmassist-child-climate-open/);
   assert.match(html, /USD 100,000/);
   assert.match(html, /No UNICEF endorsement/);
   assert.match(html, /Requires independent validation/);
