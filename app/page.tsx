@@ -73,6 +73,7 @@ export default function Home() {
             </p>
             <div className="hero-actions">
               <a className="button button-primary" href="#prototype">Explore the prototype <span>↘</span></a>
+              <a className="button button-secondary" href="https://prakau.github.io/farmassist-child-climate-open/" target="_blank" rel="noreferrer">Launch synthetic demo <span>↗</span></a>
               <a className="button button-secondary" href="#safeguarding">See the safety model</a>
             </div>
             <p className="hero-status">
@@ -462,6 +463,14 @@ export default function Home() {
               >
                 Inspect the public repository <span>↗</span>
               </a>
+              <a
+                className="button button-secondary"
+                href="https://prakau.github.io/farmassist-child-climate-open/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Run the synthetic demo <span>↗</span>
+              </a>
             </div>
           </div>
           <div className="release-gate">
@@ -480,6 +489,7 @@ export default function Home() {
           <h2>Climate resilience should work at the edge—and stay accountable in the open.</h2>
           <div className="hero-actions">
             <a className="button button-light" href="mailto:joitabioseedai@gmail.com">Discuss a responsible pilot <span>↗</span></a>
+            <a className="button button-outline-light" href="https://prakau.github.io/farmassist-child-climate-open/" target="_blank" rel="noreferrer">Launch the demo</a>
             <a className="button button-outline-light" href="https://github.com/prakau/farmassist-child-climate-open" target="_blank" rel="noreferrer">Review the source</a>
             <a className="button button-outline-light" href="https://www.joitabioseedai.com/">Visit JOITA BIOSEED AI</a>
           </div>
